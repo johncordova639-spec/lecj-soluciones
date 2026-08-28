@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LECJ Soluciones — Agencia de Soluciones Digitales</title>
+<meta name="description" content="LECJ Soluciones diseña, construye y mantiene sitios web y sistemas digitales con la disciplina de una hoja de especificaciones: cada proyecto, documentado, medido y a tiempo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">LC</span> LECJ Soluciones</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="nav-cta desktop-only" href="contacto.html">Solicitar diagnóstico</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a class="nav-cta" href="contacto.html">Solicitar diagnóstico</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">LECJ / Especificación 001 — Sitio web</span>
+      <h1>Sitios y sistemas digitales con la <em>disciplina de un plano técnico.</em></h1>
+      <p class="hero-lead">Diseñamos, construimos y mantenemos la presencia digital de tu empresa como un proyecto de ingeniería: con alcance definido, entregables claros y una sola pregunta guiando cada decisión — ¿esto ayuda a que el negocio venda más?</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="contacto.html">Solicitar diagnóstico gratuito <span class="btn-arrow">→</span></a>
+        <a class="btn btn-ghost" href="servicios.html">Ver servicios</a>
+      </div>
+    </div>
+    <div class="hero-panel spec-frame">
+      <span class="tick-tr"></span><span class="tick-bl"></span>
+      <span class="ref">FICHA · LECJ-01</span>
+      <div class="hero-stat"><div class="num">2–6 sem.</div><div class="label">Tiempo típico de entrega, según alcance</div></div>
+      <div class="hero-stat"><div class="num">100%</div><div class="label">Responsive y probado en dispositivos reales</div></div>
+      <div class="hero-stat"><div class="num">1 punto</div><div class="label">De contacto durante todo el proyecto</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Qué resolvemos</span>
+        <h2>Un sitio bonito no vende solo. Uno bien especificado, sí.</h2>
+      </div>
+      <p class="lead">Trabajamos la parte visible — diseño, textos, velocidad — junto con la que no se ve: estructura, medición y el camino que sigue alguien hasta escribirte.</p>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <span class="ref">SVC · 01</span>
+        <h3>Diseño y desarrollo web</h3>
+        <p>Sitios institucionales, catálogos y tiendas en línea construidos sobre una arquitectura clara, rápida y fácil de mantener.</p>
+        <div class="tags"><span class="tag">Responsive</span><span class="tag">SEO técnico</span><span class="tag">CMS</span></div>
+      </article>
+      <article class="card">
+        <span class="ref">SVC · 02</span>
+        <h3>Marketing digital</h3>
+        <p>Campañas en Google y redes sociales conectadas a objetivos comerciales concretos, no solo a métricas de vanidad.</p>
+        <div class="tags"><span class="tag">Google Ads</span><span class="tag">Analítica</span><span class="tag">Contenido</span></div>
+      </article>
+      <article class="card">
+        <span class="ref">SVC · 03</span>
+        <h3>Identidad y marca</h3>
+        <p>Definimos cómo se ve, se lee y se comunica tu negocio, para que cada punto de contacto se sienta parte del mismo proyecto.</p>
+        <div class="tags"><span class="tag">Logo</span><span class="tag">Guía de marca</span><span class="tag">Naming</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Cómo trabajamos</span>
+        <h2>Cuatro fases, un mismo documento de referencia.</h2>
+      </div>
+      <p class="lead">Cada proyecto sigue el mismo orden — no porque sea una fórmula, sino porque saltarse un paso es la causa más común de un sitio que no funciona.</p>
+    </div>
+
+    <div class="process-list">
+      <div class="process-item">
+        <span class="ref">01 /04</span>
+        <h3>Diagnóstico</h3>
+        <p>Revisamos tu negocio, tu competencia y lo que ya tienes en línea, y definimos qué debe lograr el sitio: contactos, ventas o presencia institucional.</p>
+      </div>
+      <div class="process-item">
+        <span class="ref">02 /04</span>
+        <h3>Especificación</h3>
+        <p>Mapa de páginas, contenidos y palabras clave. Cada sección tiene un propósito único, sin páginas que compitan entre sí.</p>
+      </div>
+      <div class="process-item">
+        <span class="ref">03 /04</span>
+        <h3>Diseño y construcción</h3>
+        <p>Diseñamos la interfaz, escribimos los textos y desarrollamos el sitio: formularios, botones e integraciones incluidos.</p>
+      </div>
+      <div class="process-item">
+        <span class="ref">04 /04</span>
+        <h3>Medición y lanzamiento</h3>
+        <p>Verificamos velocidad, formularios y seguimiento de conversiones antes de publicar, y dejamos todo conectado para medir resultados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Confían en LECJ</span>
+        <h2>Negocios de distintos rubros, un mismo estándar de trabajo.</h2>
+      </div>
+    </div>
+  </div>
+  <div class="marquee-row">
+    <div>ESTUDIO JURÍDICO</div>
+    <div>CLÍNICA DENTAL</div>
+    <div>INMOBILIARIA</div>
+    <div>RETAIL DE MODA</div>
+    <div>CONSULTORA B2B</div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap cta-band-inner">
+    <div>
+      <span class="eyebrow">Empecemos</span>
+      <h2>Solicita tu diagnóstico de diseño web, sin costo.</h2>
+      <p>En 20 minutos revisamos tu presencia digital actual y te decimos, con claridad, qué necesita tu proyecto.</p>
+    </div>
+    <a class="btn btn-primary" href="contacto.html">Agendar diagnóstico <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><span class="mark">LC</span> LECJ Soluciones</a>
+        <p>Agencia de soluciones digitales: diseño web, marketing y marca para empresas que quieren crecer con criterio.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Diseño web</a></li>
+          <li><a href="servicios.html">Marketing digital</a></li>
+          <li><a href="servicios.html">Identidad de marca</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="contacto.html">info@lecjsoluciones.com</a></li>
+          <li><a href="contacto.html">Agendar diagnóstico</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LECJ Soluciones. Todos los derechos reservados.</span>
+      <span>Hecho con LECJ / Ficha LC-01</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

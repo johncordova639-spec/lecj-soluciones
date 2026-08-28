@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto — LECJ Soluciones</title>
+<meta name="description" content="Solicita tu diagnóstico gratuito de diseño web con LECJ Soluciones. Escríbenos por formulario, WhatsApp o correo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="particles-canvas"></canvas>
+<div id="cursor-ring"></div>
+<div id="cursor-dot"></div>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html"><span class="mark">LC</span> LECJ Soluciones</a>
+    <nav class="nav-links" aria-label="Principal">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html" aria-current="page">Contacto</a>
+    </nav>
+    <a class="nav-cta desktop-only" href="#form">Solicitar diagnóstico</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-panel">
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="contacto.html">Contacto</a>
+    <a class="nav-cta" href="#form">Solicitar diagnóstico</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contacto</span>
+    <h1>Cuéntanos sobre tu proyecto y te respondemos en menos de 24 horas.</h1>
+    <p>Completa el formulario o escríbenos directamente. En la primera llamada revisamos tu caso y te decimos, sin rodeos, qué necesita tu proyecto.</p>
+  </div>
+</section>
+
+<section class="section" id="form">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-panel">
+        <span class="eyebrow">Formulario</span>
+        <h2 style="font-size:26px; margin-top:14px; margin-bottom:26px;">Solicita tu diagnóstico</h2>
+        <form id="diagnosis-form">
+          <div class="field">
+            <label for="nombre">Nombre completo</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+          </div>
+          <div class="field">
+            <label for="empresa">Empresa</label>
+            <input id="empresa" name="empresa" type="text" placeholder="Nombre de tu negocio">
+          </div>
+          <div class="field">
+            <label for="correo">Correo electrónico</label>
+            <input id="correo" name="correo" type="email" placeholder="alguienexample@gmail.com" required>
+          </div>
+          <div class="field">
+            <label for="servicio">Servicio de interés</label>
+            <select id="servicio" name="servicio">
+              <option>Diseño y desarrollo web</option>
+              <option>Marketing digital</option>
+              <option>Identidad y marca</option>
+              <option>Aún no lo sé</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="mensaje">Cuéntanos sobre tu proyecto</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué necesita tu negocio?"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Enviar solicitud <span class="btn-arrow">→</span></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="contact-panel">
+        <span class="eyebrow">Otras vías</span>
+        <h2 style="font-size:26px; margin-top:14px; margin-bottom:6px;">Habla directo con nosotros</h2>
+        <p style="color:var(--muted); font-size:15px;">Si prefieres, escríbenos directamente por cualquiera de estos canales.</p>
+        <ul class="contact-info-list">
+          <li><span class="k">WHATSAPP</span><span class="v">+593 99 530 1328</span></li>
+          <li><span class="k">CORREO</span><span class="v">johncordova639@gmail.com</span></li>
+          <li><span class="k">UBICACIÓN</span><span class="v">Quito, Ecuador</span></li>
+          <li><span class="k">HORARIO</span><span class="v">Lun–Vie, 9:00–18:00</span></li>
+        </ul>
+        <a class="btn btn-ghost" style="margin-top:24px;" href="https://api.whatsapp.com/send?phone=593995301328&text=Hola%20LECJ%20Soluciones%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head" style="margin-bottom:20px;">
+      <div>
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Antes de escribirnos</h2>
+      </div>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q">¿Cuánto tarda un proyecto de diseño web? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Depende del alcance, pero un sitio institucional suele tomar entre 2 y 4 semanas, y un catálogo o tienda, entre 4 y 8 semanas.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿El diagnóstico inicial tiene costo? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">No. La primera conversación es gratuita y sin compromiso; ahí definimos si somos la agencia correcta para tu proyecto.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Puedo pedir solo una parte del servicio? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sí. Diseño web, marketing e identidad de marca pueden contratarse por separado o en conjunto, según lo que necesites hoy.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">¿Qué necesitan de mí para empezar? <span class="faq-plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner">Información sobre tu negocio, tus servicios y, si ya tienes, contenido o imágenes de referencia. Si no tienes nada de esto, te ayudamos a construirlo.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><span class="mark">LC</span> LECJ Soluciones</a>
+        <p>Agencia de soluciones digitales: diseño web, marketing y marca para empresas que quieren crecer con criterio.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="servicios.html">Diseño web</a></li>
+          <li><a href="servicios.html">Marketing digital</a></li>
+          <li><a href="servicios.html">Identidad de marca</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="contacto.html">johncordova639@gmail.com</a></li>
+          <li><a href="contacto.html">Agendar diagnóstico</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LECJ Soluciones. Todos los derechos reservados.</span>
+      <span>Hecho con LECJ / Ficha LC-01</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
